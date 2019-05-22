@@ -90,7 +90,7 @@ class RandomWordsState extends State<RandomWords> {
 
   void _pushSaved() {
     Navigator.of(context).push(
-      MaterialPageRoute<void>(   //ここから20行追加してください
+      MaterialPageRoute<void>(
       builder: (BuildContext context) {
         final Iterable<ListTile> tiles = _saved.map(
           (WordPair pair) {
@@ -109,7 +109,7 @@ class RandomWordsState extends State<RandomWords> {
           )
           .toList();
 
-          return Scaffold(         // ここから6行追加してください
+          return Scaffold(
           appBar: AppBar(
             title: Text('Saved Suggestions'),
           ),
